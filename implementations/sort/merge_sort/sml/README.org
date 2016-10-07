@@ -1,0 +1,25 @@
+* Implementations of merge-sort in Standard ML
+
+Please feel free to add more implementations! Corrections and comments are also
+welcome! The examples in here so far were run on [[http://www.smlnj.org/][SML/NJ]], and, at least
+~list-merge-sort.sml~ uses some syntax specific to SML/NJ.
+
+** Contents
+
+*** Merge-sort on polymorphic lists
+
+~list-merge-sort.sml~ attempts a nice, clean implementation of merge-sort on
+polymorphic lists in a functional style.
+
+*** Merge-sort on integer array
+
+~array-merge-sort.sml~ is a pretty ugly attempt at forcing SML into an
+imperative idiom. It is an exercise on working with mutable arrays in an
+imperative style. To that end, I implement a goofy fragment of an imperative
+DSL.
+
+** Dependencies
+
+- ~list-merge-sort.sml~ and ~array-merge-sort.sml~ both use some structures
+provides by a little utility library I cultivate for convenience and learning:
+https://github.com/aBathologist/sml-utils
